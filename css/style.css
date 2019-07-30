@@ -1,0 +1,147 @@
+/*
+Theme Name: GYARISUTA!ver5
+Theme URI: http://www.kiokh.me/
+Description: KIOKHBLOG!
+Version: 5.0
+Author: GYARI
+Author URI: http://www.gyari.com/
+*/
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/*-------------------------------------------
+common
+-------------------------------------------*/
+html{
+	color:#999999;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:"Open Sans";
+	font-weight: 300;
+}
+a{
+	color:#999999;
+	text-decoration:none;
+}
+a:hover{
+	text-shadow:0 0 2px #999999;
+}
+i{
+	padding-right:0.25em;
+}
+
+
+#wrapper{
+	overflow:hidden;
+	background-color:#F8F8F8;
+}
+.inner{
+	width:960px;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+@media screen and (max-width: 1000px) {
+    .inner{
+        width:100%;
+        padding:0 20px;
+    }
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+
+header{
+	background:#ffffff;
+	box-shadow: 0 0 3px #CCCCCC;
+}
+header .head h1{
+	width:60px;
+	padding:40px 0;
+	margin:0 auto;
+}
+@media screen and (max-width: 600px) {
+    header .head h1{
+        padding:25px 0;
+    }
+}
+nav#gnav{
+	text-align:center;
+	padding:0 0 20px;
+	font-size:77%;
+}
+nav#gnav ul li{
+	display: inline;
+}
+nav#gnav ul li a{
+	padding:0 15px;
+	text-align:center;
+	font-family:"Open Sans";
+	font-weight: 300;
+	letter-spacing:0.1em;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+    nav#gnav{
+        padding:0 0 10px;
+    }
+    nav#gnav ul li a{
+        display:block;
+        float:left;
+        width:33.33%;
+        text-align:center;
+        padding:0.2em 0;
+    }
+}
+
+
+
+/*-------------------------------------------
+pagetop
+-------------------------------------------*/
+
+#pagetop{
+	position:fixed;
+	right:10px;
+	bottom:-208px;
+	z-index:5000;
+	width:75px;
+}
+#pagetop img{
+	width:100%;
+	height:auto;
+}
+@media screen and (max-width: 500px) {
+	#pagetop{
+		width:50px;
+		height:auto;
+		bottom:-180px;
+	}
+}
+
+
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+footer{
+	padding:20px;
+	margin:0 -20px 0 0;
+	text-align:center;
+	background:#ffffff;
+	box-shadow: 0 0 3px #CCCCCC;
+}
+footer address{
+	font-size:10px;
+	font-style:normal;
+}
+
