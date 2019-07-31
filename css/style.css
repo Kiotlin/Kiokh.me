@@ -1,7 +1,7 @@
 /*
 Theme Name: GYARISUTA!ver5
 Theme URI: http://www.kiokh.me/
-Description: KIOKHBLOG!
+Description: KIOKHBLOG!テーマ
 Version: 5.0
 Author: GYARI
 Author URI: http://www.gyari.com/
@@ -102,6 +102,775 @@ nav#gnav ul li a{
     }
 }
 
+
+/*-------------------------------------------
+home
+-------------------------------------------*/
+body.home main{
+	opacity:0;
+	padding:10px;
+}
+body.home .mainInner{
+	max-width:1200px;
+	margin: auto;
+}
+body.home article,
+body.home .bannerArea{
+	width:25%;
+	box-sizing:border-box;
+	padding:5px;
+}
+body.home .headline{
+	width:25%;
+}
+body.home .headline .articleInner{
+	border-left: 2px solid #000;
+}
+body.home .headline .articleInner h3{
+	font-size: 18px;
+}
+body.home .headline .articleInner h3 a{
+	color: #000;
+}
+
+@media screen and (max-width: 600px) {
+	body.home article,
+	body.home .bannerArea{
+		width:50%;
+	}
+	body.home .headline{
+		width:50%;
+	}
+}
+@media screen and (max-width: 400px) {
+	body.home article,
+	body.home .bannerArea{
+		width:100%;
+	}
+	body.home .headline{
+		width:100%;
+	}
+}
+
+body.home .articleInner{
+	background:#ffffff;
+	box-shadow: 0 0 3px #CCCCCC;
+}
+body.home .articleInner h3{
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:100%;
+	padding:1em;
+}
+body.home .articleInner h3 a{
+	color: #000;
+}
+body.home .articleInner div{
+	font-size:77%;
+	padding:0 1em 1em;
+}
+body.home .profile{
+	font-size:10px;
+}
+body.home .profile figure{
+	text-align:center;
+	background:#F0F0F0;
+	padding:20px;
+}
+body.home .profile figure img{
+	width:50%;
+	height:auto;
+	border-radius:50%;
+}
+@media screen and (max-width: 600px) {
+    body.home .profile figure img{
+        width:80%;
+    }
+}
+body.home .profile li a{
+	display:block;
+	border-top:1px solid #EFEFEF;
+	padding:0.5em 1em;
+}
+
+/*-------------------------------------------
+main
+-------------------------------------------*/
+main{
+	padding:0 0 80px;
+}
+main#index .inner{
+	padding:40px 0 0;
+}
+@media screen and (max-width: 1000px) {
+    main#index .inner{
+        padding:20px 20px 0;
+    }
+}
+
+#title{
+	text-align:center;
+	font-size:36px;
+	color:#999999;
+	padding:40px 0 10px;
+}
+.single #title{
+	font-size:20px;
+	text-align:left;
+	padding:30px 0;
+}
+#read{
+	text-align:center;
+	padding:0 0 20px;
+	font-size:10px;
+	letter-spacing:0.1em;
+}
+@media screen and (max-width: 600px) {
+    #title{
+        font-size:24px;
+        padding:10px 0;
+    }
+    .single #title{
+        font-size:20px;
+        text-align:left;
+        padding:15px 0 0;
+    }
+}
+
+/* tagList */
+#tagList{
+	padding:0 0 50px;
+}
+@media screen and (max-width: 600px) {
+    #tagList{
+        padding:0 0 30px;
+    }
+}
+#tagList h3{
+	font-size:93%;
+	text-align:center;
+}
+#tagList h3 a{
+	background:none;
+	box-shadow:none;
+}
+#tagList h3 a.active{
+	background:#ffffff;
+	box-shadow: 0 0 3px #cccccc;
+	padding:0.5em;
+	border-radius:0.2em;
+}
+#tagList ul{
+	background:#eeeeee;
+	margin-top:10px;
+	padding:10px 10px 7px;
+	border-radius:0.2em;
+	/*display:none;*/
+}
+
+@media screen and (max-width: 600px) {
+    #tagList ul{
+        display:none;
+    }
+}
+#tagList ul li{
+	float:left;
+}
+#tagList ul a{
+	display:block;
+	padding:0.5em;
+	margin:0 0.5em 0.5em 0;
+	background:#FFFFFF;
+	border-radius:0.2em;
+	box-shadow: 0 0 3px #cccccc;
+	font-size:10px;
+}
+#tagList ul a:hover{
+	background:#cccccc;
+	color:#ffffff;
+}
+
+
+/* posts */
+.posts{
+	margin:0 -10px 0 0;
+}
+
+.posts article{
+	width:33.33%;
+	float:left;
+	padding:0 10px 10px 0;
+	box-sizing:border-box;
+	font-size:10px;
+}
+.posts article .articleInner{
+	background:#ffffff;
+	box-shadow: 0 0 3px #CCCCCC;
+	position:relative;
+}
+@media screen and (max-width: 960px) {
+	.posts{ margin: 0 -20px 0 0;}
+	.posts article{padding:0 20px 20px 0;}
+}
+@media screen and (max-width: 500px) {
+	.posts article{ width:50%;}
+}
+@media screen and (max-width: 320px) {
+	.posts article{ width:100%;}
+}
+.posts article figure img{
+	width:100%;
+	height:auto;
+}
+.posts article h3{
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding:1em 1em 5em;
+}
+.posts article ul.articleTag{
+	box-sizing:border-box;
+	padding:1em;
+	position:absolute;
+	bottom:0;
+	font-size:80%;
+}
+.posts article ul.articleTag li{
+	float:left;
+	padding-right:1em;
+}
+.posts article ul.articleTag li a{
+	color:#cccccc;
+}
+.posts article ul.articleTag{
+	transform:scale(0.9);
+	transform-origin:0 bottom;
+}
+
+/* pager */
+#pager{
+	padding:40px 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#pager .wp-pagenavi span,
+#pager .wp-pagenavi a{
+	display:block;
+	border:none;
+	float:left;
+	margin:0 5px 5px 0;
+	padding:5px 10px;
+	background:#FFFFFF;
+	box-shadow: 0 0 3px #cccccc;
+}
+#pager .wp-pagenavi a:hover{
+	background:#cccccc;
+	color:#ffffff;
+}
+
+/*-------------------------------------------
+main-contents
+-------------------------------------------*/
+.soldOutHead{font-size: 36px; text-align: center; padding: 40px 0 10px;}
+#contents .posts{
+	margin:0 -10px 0 0;
+}
+#contents .posts article{
+	width:33.33%;
+	padding:0 10px 10px 0;
+}
+@media screen and (max-width: 320px) {
+	#contents .posts article{ width:50%;}
+}
+#contents #soldOut h2{
+	font-size:30px;
+	text-align:center;
+	padding:40px 0 20px;
+}
+/*-------------------------------------------
+main-event
+-------------------------------------------*/
+#event .posts{
+	margin:0 -10px 0 0;
+}
+#event .posts article{
+	width:50%;
+	margin:0;
+	padding: 0 10px 10px 0;
+}
+#event .posts article h3{
+	font-size: 18px;
+	padding: 0;
+}
+#event .posts article h3 a{
+	color: #000;
+}
+#event .posts article .articleInner{
+	padding:20px;
+	border-left: 2px solid #000;
+}
+#event .posts article ul.articleTag{
+	position: static;
+	padding:0 0 10px;
+}
+@media screen and (max-width: 600px) {
+	#event .posts article{ width:100%;}
+}
+
+/*-------------------------------------------
+single
+-------------------------------------------*/
+main.single .inner{
+	width:720px;
+}
+@media screen and (max-width: 960px) {
+    main.single .inner{
+        width:100%;
+    }
+}
+
+
+/* pankuzu */
+#pankuzu{
+	font-size:10px;
+	padding:0 0 5px;
+}
+@media screen and (max-width: 960px) {
+    #pankuzu{
+        padding:5px 0;
+    }
+}
+
+.blogArea{
+	background:#FFFFFF;
+	box-shadow: 0 0 3px #CCCCCC;
+	margin:0 auto 40px;
+	color:#000000;
+	overflow:hidden;
+}
+
+.blogArea h1{
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding:0 0 20px;
+	font-size:24px;
+}
+.blogArea .head{
+	padding:5%;
+	border-bottom:1px solid #EEEEEE;
+}
+.blogArea .head #singleInfo{
+	color:#999999;
+	font-size:100%;
+	border-left:2px solid #000000;
+	padding-left:1em;
+}
+.blogArea .head #singleInfo dl dt{
+	float:left;
+	padding:0 0.5em 0 0;
+	color:#000000;
+}
+.blogArea .head #singleInfo dl dd{
+	float:left;
+	padding:0 0.5em 0 0;
+}
+.blogArea .head #singleInfo dl dd a{
+	text-decoration:underline;
+}
+.blogArea .head #singleInfo dl dd a:hover{
+	text-decoration:none;
+}
+.blogArea .head #singleInfo .twBtn{
+	height:20px;
+	overflow:hidden;
+	margin-top:5px;
+}
+.blogArea .body .txt{
+	padding:0 5% 5%;
+	font-size:123.1%;
+}
+.blogArea .body .txt p{
+	margin-top:2em;
+}
+.blogArea .body .txt a{
+	text-decoration:underline;
+}
+.blogArea .body .txt a:hover{
+	text-decoration:none;
+}
+.blogArea .body .txt h2{
+	margin-top:5em;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:139%;
+	background:#F3F3F3;
+	border-left:#A6A6A6 0.2em solid;
+	padding:0.8em 0 0.8em 0.5em;
+}
+.blogArea .body .txt h3{
+	margin-top:4em;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:139%;
+	border-top:#cccccc 2px solid;
+	border-bottom:#cccccc 1px dotted;
+	padding:0.4em 0;
+}
+.blogArea .body .txt h4{
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:100%;
+	font-weight:bold;
+	margin-top:3em;
+	background:#F8F8F8;
+	padding:0.25em 0.5em;
+}
+.blogArea .body .txt blockquote{
+	margin-top:2em;
+	background:#F8F8F8;
+	padding:5%;
+}
+.blogArea .body .txt blockquote i{
+	font-size:2em;
+	display:block;
+	color:#cccccc;
+}
+.blogArea .body .txt blockquote i.fa-quote-left{ margin:0 0 5px;}
+.blogArea .body .txt blockquote i.fa-quote-right{ text-align:right;}
+.blogArea .body .txt blockquote p{
+	margin:0 0 5px;
+}
+.blogArea .body .txt img{
+	box-shadow: 0 0 3px #CCCCCC;
+	max-width: 100%;
+    width: auto;
+}
+
+.blogArea .body .txt .iframeArea{
+     position:relative;
+     padding:56.25% 0 0;/*ボックスの高さ*/
+}
+
+.blogArea .body .txt .iframeArea iframe,
+.blogArea .body .txt .iframeArea embed{
+     position:absolute;
+     top:0;
+     left:0;
+	 width:100%;
+	 height:100%;
+}
+
+
+
+.blogArea .body .txt ul{
+	padding:2em 0 0 1em;
+}
+.blogArea .body .txt ul li{
+	padding-top:1em;
+	list-style:disc;
+}
+.blogArea #twArea{
+	padding:3% 5%;
+	border-top: 1px solid #eeeeee;
+	max-height:200px;
+	overflow-y:scroll;
+}
+.blogArea #twArea h3{
+	font-size:182%;
+}
+.blogArea #twArea h3,
+.blogArea #twArea .twBtn{
+	float:left;
+	margin:0;
+}
+.blogArea #twArea .twBtn{
+	padding:9px 0 0 20px;
+}
+.blogArea #twArea .tweet{
+	margin-top:1em;
+	font-size:0.8em;
+	clear:both;
+}
+.blogArea #twArea .tweet figure{
+	float:left;
+	padding-right:10px;
+}
+.blogArea #twArea .tweet p.name{
+	font-weight:bold;
+	font-size:1.2em;
+}
+.blogArea #twArea .tweet p.name span{
+	font-weight:normal;
+}
+.blogArea #twArea .tweet p span{
+	color:#999999;
+}
+
+
+/*sidebar*/
+#sidebar{ width:100%; float:none;}
+@media screen and (max-width: 960px) {
+	#sidebar{ width:100%; float:none;}
+}
+
+
+#sidebar h2{
+	color:#000000;
+	font-size:18px;
+	margin-bottom:5px;
+}
+#sidebar .posts{
+	margin: 0 -20px 0 0;
+}
+#sidebar .posts article{
+	width:50%;
+	padding:0 20px 20px 0;
+}
+#sidebar .posts #nextPost,
+#sidebar .posts #prevPost{
+	float:left;
+	width:50%;
+	margin:0 0 30px;
+}
+#sidebar .posts article .noPost{
+	box-shadow:none;
+	background:none;
+	color:#ffffff;
+}
+#sidebar .posts h2{
+	text-align:center;
+	margin:0 20px 20px 0;
+}
+#sidebar .posts #nextPost article,
+#sidebar .posts #prevPost article{
+	width:100%;
+}
+#sidebar .posts #tagPosts{
+	margin:0 0 30px;
+}
+@media screen and (max-width: 960px) {
+	#sidebar .posts{
+		margin: 0 -20px 0 0;
+	}
+	#sidebar .posts article{
+		width:50%;
+		padding:0 20px 20px 0;
+	}
+	#sidebar .posts #nextPost,
+	#sidebar .posts #prevPost{
+		float:left;
+		width:50%;
+	}
+	#sidebar .posts #nextPost article,
+	#sidebar .posts #prevPost article{
+		width:100%;
+	}
+}
+.single #tagList ul{
+	display: block;
+}
+
+/* ----------------------------------------
+*	INFO
+---------------------------------------- */
+#info h1{
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 300;
+    font-size:200%;
+	padding:0;
+	text-align:center;
+}
+#info figure{
+	text-align:center;
+	margin:2em 0;
+}
+#info .body .txt img{
+	width:200px;
+	box-shadow: none;
+}
+.dlbox{
+	border-bottom:1px solid #eeeeee;
+	border-top:1px solid #eeeeee;
+	margin-top:1em;
+	padding:1em 0;
+}
+.dlbox dl{
+	font-size:77%;
+	color:#666666;
+	padding:0.5em 0;
+	overflow:hidden;
+}
+.dlbox dl dt{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.dlbox dl dd{
+	width:75%;
+	float:left;
+}
+
+@media screen and (max-width: 640px) {
+	.dlbox dl dt{
+		width:40%;
+	}
+	.dlbox dl dd{
+		width:60%;
+	}
+}
+
+/* ----------------------------------------
+*	CONTACT
+---------------------------------------- */
+#contact img{
+	width:auto;
+}
+#contact .body .txt{
+	padding:5%;
+}
+
+#contact h1 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 200%;
+    font-weight: 300;
+    padding-bottom: 0;
+	text-align:center;
+}
+#contact .contactContents dl{
+	margin:0 auto 1.5em;
+}
+#contact .contactContents dl dt:first-child{
+	width:10%;
+	color:#BDC3C7;
+}
+#contact .contactContents dl dt{
+	float:left;
+	width:30%;
+	padding-top:0.25em;
+}
+#contact .contactContents dl dd{
+	float:left;
+	width:60%;
+}
+
+#contact .qa{
+	padding:5% 5% 0;
+}
+#contact .body h2{
+	margin: 0 0 2em;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:139%;
+	background:#F3F3F3;
+	border-left:#A6A6A6 0.2em solid;
+	padding:0.8em 0 0.8em 0.5em;
+}
+#contact .qa dl{
+	margin:0 0 20px;
+	border-left:3px solid #ccc;
+	padding:0 0 0 1em;
+}
+#contact .qa dt{
+	font-size:16px;
+	font-weight:bold;
+	margin:0 0 5px;
+}
+#contact .qa__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 20px;
+    background: #eeeeee;
+    padding: 15px;
+    border-radius: 5px;
+}
+#contact .qa__navItem{
+    width: calc(50% - 5px);
+}
+#contact .qa__navItemLink{
+    display: block;
+    padding: 1em;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #cccccc;
+}
+#contact .qa__navItemLink:hover{
+    background-color: #f0f0f0;
+}
+#contact .qa__section{
+	border: 1px dotted #ddd;
+	padding: 20px;
+	margin: 0 0 1em;
+}
+#contact .qa__section a{
+	text-decoration: underline;
+}
+#contact .qa__sectionHead{
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: bold;
+	font-size:139%;
+	text-align: center;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: 1px dotted #ddd;
+}
+#contact .qa__btnLink{
+	display: inline-block;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+	padding: 0.5em 0.8em;
+	margin: 0.5em 0 0;
+	border-radius: 3px;
+}
+
+
+@media screen and (max-width: 640px) {
+	#contact .contactContents dl dt:first-child,
+	#contact .contactContents dl dt,
+	#contact .contactContents dl dd{
+		width:100%;
+	}
+	#contact dl dd{
+		margin-top:0.5em;
+	}
+}
+
+#contact .contactContents dl dd input,
+#contact .contactContents dl dd textarea{
+	width:100%;
+	background:#F8F8F8;
+	border:none;
+	padding:0.25em;
+	font-size:100%;
+	box-sizing:border-box;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	box-shadow: 0 0 2px #cccccc inset;
+}
+#contact .contactContents dl dd textarea{
+	resize: vertical;
+}
+#contact .contactContents .submitArea{
+	text-align:center;
+	margin:3em 0 0;
+}
+#contact .contactContents .submitArea p{
+	margin:1em 0 0;
+}
+#contact .contactContents p.submit input{
+	display:block;
+	background:#34495e;
+	border:none;
+	border-radius:3px;
+	padding:10px;
+	box-sizing:border-box;
+	color:#ffffff;
+	width:40%;
+	margin:0 auto;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	cursor:pointer;
+}
+@media screen and (max-width: 640px) {
+    #contact .contactContents p.submit input{
+        width:100%;
+    }
+}
+#contact .contactContents p.submit input:disabled{
+	background:#BDC3C7;
+	cursor: default;
+}
 
 
 /*-------------------------------------------
