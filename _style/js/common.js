@@ -90,7 +90,7 @@ $(function(){
 	});
 	/*
 	$('.qaBtn').click(function() {
-		$('.qa_contents').slideToggle(500);//�@�J���X�s�[�h
+		$('.qa_contents').slideToggle(500);
 		return false;
 	});
 	*/
@@ -110,7 +110,7 @@ $(window).load(function(){
 	$('.home main').animate({'opacity':'1'},'slow');
 });
 
-/*Firefox�p*/
+/*Firefox*/
 $(function(){
 	var $container = $('.home .mainInner');
 	$container.masonry({
