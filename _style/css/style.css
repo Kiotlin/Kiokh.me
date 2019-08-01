@@ -871,6 +871,23 @@ main.single .inner{
 	background:#BDC3C7;
 	cursor: default;
 }
+.response-output {
+	margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+	border: 2px solid #ff0000;
+	transition: ease-in-out;
+}
+.display-none {
+	display: none;
+}
+.validation-errors {
+	border: 2px solid #f7e700;
+	display: block;
+}
+.validation-success {
+	border: 2px solid #4fb872;
+	display: block;
+}
 .ajax-loader {
 	visibility: hidden;
     display: inline-block;
