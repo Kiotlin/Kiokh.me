@@ -1,0 +1,21 @@
+.star-wrap {
+  display: flex;
+  align-items: center;
+}
+.star {
+  width: 70px;
+  height: 50px;
+  background: url(../images/twitter_fave.png) no-repeat;
+  background-position: 0 0;
+  margin-left: 10px;
+}
+.active {
+  background-position: -3519px 0;
+  transition: background 1s steps(55);
+}
+.star-content {
+  display: flex;
+  width: 35px;
+  height: 50px;
+  align-items: center;
+}
