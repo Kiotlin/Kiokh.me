@@ -495,7 +495,7 @@ main.single .inner{
 	text-decoration:none;
 }
 .blogArea .body .txt h2{
-	margin-top:5em;
+	margin-top:2em;
 	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:139%;
 	background:#F3F3F3;
@@ -517,6 +517,16 @@ main.single .inner{
 	margin-top:3em;
 	background:#F8F8F8;
 	padding:0.25em 0.5em;
+}
+.blogArea .body .txt p span {
+	margin-top: 1em;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: lighter;
+	margin-bottom: 2em;
+	font-size: 50%;
+	color: #999999;
+	text-align: center;
+	display: block;
 }
 .blogArea .body .txt blockquote{
 	margin-top:2em;
