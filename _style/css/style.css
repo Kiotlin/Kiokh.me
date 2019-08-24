@@ -406,6 +406,9 @@ main-event
 	padding:20px;
 	border-left: 2px solid #000;
 }
+#event .posts article .articleInner.specBorder {
+	border-left: 2px solid #f7bd00
+}
 #event .posts article ul.articleTag{
 	position: static;
 	padding:0 0 10px;
