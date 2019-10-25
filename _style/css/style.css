@@ -694,6 +694,20 @@ main.single .inner{
 	width:200px;
 	box-shadow: none;
 }
+#info .body .txt span{
+	margin: auto;
+	text-align: center;
+	display: block;
+	color: #999999;
+}
+#info .blogArea .body .txt h3{
+	margin-top: 2em;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 139%;
+    border-top: #cccccc 2px solid;
+    border-bottom: #cccccc 1px dotted;
+    padding: 0.4em 0;
+}
 .dlbox{
 	border-bottom:1px solid #eeeeee;
 	border-top:1px solid #eeeeee;
