@@ -28,14 +28,14 @@ $(function(){
 	var topBtn = $('#pagetop');
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
-			topBtn.stop().animate({'margin-bottom':'120px'},'fast');
+			topBtn.stop().animate({'margin-bottom':'110px'},'fast');
 		} else {
 			topBtn.stop().animate({'margin-bottom':'0'},'fast');
 		}
 	});
 	$('#pagetop img').hover(
 		function(){
-			$(this).stop().animate({'margin-bottom':'25px'},'fast');
+			$(this).stop().animate({'margin-bottom':'35px'},'fast');
 		},
 		function(){
 			$(this).stop().animate({'margin-bottom':'0'},'fast');
