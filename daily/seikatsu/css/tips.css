@@ -1,0 +1,40 @@
+.tips{
+    margin:1.8px 0 0 10px;
+	background-color: #BCDBEA;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	font-size: 8px;
+    line-height: 20px;
+    z-index: 1000;
+}
+.tips:before{
+    content:'?';
+    margin-left: 4.8px;
+	font-weight: bold;
+	color:#fff;
+}
+.tips:hover {
+    background-color: darkgrey;
+}
+.tips:hover p{
+	display:block;
+	transform-origin: 100% 0%;
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+}
+.tips p{
+	display: none;
+	text-align: left;
+	background-color: rgb(235, 230, 230);
+	padding: 20px;
+	width: 250px;
+	border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    top: -50px;
+    left: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;;
+	font-size: 13px;
+    line-height: 1.4;
+}
